@@ -1,0 +1,7 @@
+<h1>Please choose a <%= @collection %> type. </h1>
+
+<form method="post" action="/quality">
+  <% @qualities.each do |n| %>
+  <button class="inline" name="quality" id="quality" value="<%= n[1] %>"><%= n[0] %></button>
+<% end %>
+</form> 

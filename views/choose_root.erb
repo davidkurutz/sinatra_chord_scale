@@ -1,0 +1,14 @@
+<h1>Welcome to the Chord-Scale Builder</h1>
+<h2>Please choose a root tone</h2>
+
+<% Collection::ACCIDENTALS.each do |symbol| %>
+
+<form method="post">
+  <% Collection::NATS.each do |n| %>
+  <button class="inline" name="root" id="root" value="<%= n + symbol %>" formaction="/"><%= n + symbol %></button>
+<% end %>
+</form> 
+
+
+
+<% end %>
