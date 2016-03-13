@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chord-Scale Builder</title>
+    <link rel="stylesheet" href="/chord_scale.css"/>
+  </head>
+  <body>
+    <% if session[:error] %>
+    <p class="error"><%= session.delete(:error) %></p>
+    <% end %>
+
+    <%= yield %>
+    <form action="/reset" method="get">
+      <button>Reset</button>
+    </form>
+  </body>
+</html>

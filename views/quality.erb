@@ -2,6 +2,6 @@
 
 <form method="post" action="/quality">
   <% @qualities.each do |n| %>
-  <button class="inline" name="quality" id="quality" value="<%= n[1] %>"><%= n[0] %></button>
+  <button name="quality" value="<%= n[1] %>"><%= n[0] %></button>
 <% end %>
 </form> 

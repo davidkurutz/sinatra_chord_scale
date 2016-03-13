@@ -132,3 +132,19 @@
     - :p_5
     - :min_7
     - :root
+:chromatic:
+  - '13'
+  - Chromatic
+  - - :root
+    - :min_2
+    - :maj_2
+    - :min_3
+    - :maj_3
+    - :p_4
+    - :d_5
+    - :p_5
+    - :min_6
+    - :maj_6
+    - :min_7
+    - :maj_7
+    - :root

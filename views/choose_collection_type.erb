@@ -1,6 +1,6 @@
-<h1>Please choose 'Chord' or 'Scale' for <%= params[:root] %></h1>
+<h1>Would you like to build a Chord or Scale for <%= @root %>?</h1>
 
-<form method="post">
-  <button id="collection" name="collection" value="chord" formaction="/collection">Chord</button>
-  <button id="collection" name="collection" value="scale" formaction="/collection">Scale</button>
+<form method="post" action="/collection">
+  <button name="collection" value="chord">Chord</button>
+  <button name="collection" value="scale">Scale</button>
 </form>

@@ -5,10 +5,8 @@
 
 <form method="post">
   <% Collection::NATS.each do |n| %>
-  <button class="inline" name="root" id="root" value="<%= n + symbol %>" formaction="/"><%= n + symbol %></button>
+  <button name="root" value="<%= n + symbol %>" formaction="/"><%= n + symbol %></button>
 <% end %>
 </form> 
-
-
 
 <% end %>
